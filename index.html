@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MacBook Air 13-inch M1/8/256 Gold</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+  <!-- ========= Header===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black mb-5">
+    <div class="container">
+      <a class="navbar-brand" href="#">MacBro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+  
+  <!-- MAIN PART  -->
+  <main>
+    <section class="mac">
+      <div class="container">
+        <div class="mac__main" id="boxsid">
+
+          <!-- left part -->
+          <div class="mac__imgboxs" id="imgbox">
+            <div class="mac__bigimgbox">
+              <ul class="mac__biglist" id="bigimg"></ul>
+            </div>
+            <button class="mac__imgboxbtn" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bx bx-fullscreen"></i></button>
+            <ul class="mac__imglist" id="minimg"></ul>
+          </div>
+
+          <!-- right part -->
+
+          <div class="mac__box">
+            <h2 class="mac__name">Mac Book Air 13-inch <br><span id="">
+              <span>M1</span>/<span id="tram">16</span>/<span id="tmem">512</span>/<span id="tcol">Gold</span>
+            </span><button class="mac__tbtn" id="tbtn"><img class="mac__icons" src="img/podelsiya.svg" alt="podelsiya"></button></h2>
+
+            <!-- ram -->
+            <h2 class="mac__title">Ram</h2>
+            <div class="mac__rambox" id="ram">
+
+            </div>
+
+            <!-- memory part -->
+
+            <h2 class="mac__title">Xotira Hajmi</h2>
+            <div class="mac__rambox" id="mem"></div>
+
+            <!-- ranglar part -->
+
+            <h3 class="mac__title">Ranglar</h3>
+            <div class="mac__colbox" id="color">
+
+             </div>
+            <form class="mac__form" action="">
+              <button class="mac__frminus" id="minus"><i
+                  class="bx bx-minus mac__fricon"></i></button>
+                  <input class="mac__frinput" type="number" value="1"
+                placeholder="1" id="input">
+                <button class="mac__frplus" id="plus">
+                  <i class="bx bx-plus mac__fricon">
+
+                  </i>
+                </button>
+              </form>
+
+             <!-- price part -->
+            <div class="mac__bagbox">
+              <p class="mac__prsale" id="price"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-body d-flex flex-column align-items-center justify-content-center">
+                <div class="mac__bigimgbox">
+                  <ul class="mac__biglist" id="modalimg"></ul>
+                </div>
+                <ul class="mac__imglist" id="modalMinImg"></ul>
+            <div class="modal-header">
+              <button type="button" class="mac__exit" data-bs-dismiss="modal" aria-label="Close"><i class='bx bx-exit-fullscreen'></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="js/objs.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
